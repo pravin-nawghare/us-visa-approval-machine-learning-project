@@ -31,7 +31,8 @@ list_of_files = [
     "setup.py",
     "config/model.yaml",
     "config/schema.yaml",
-]
+]#git pull origin main --allow-unrelated-histories
+#git merge origin origin/main
 
 for filepath in list_of_files: #looping over the list of files
     filepath = Path(filepath) #accessing the path
