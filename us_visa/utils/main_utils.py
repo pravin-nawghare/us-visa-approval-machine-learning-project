@@ -59,7 +59,7 @@ def save_numpy_array_data(file_path: str, array:np.array):
     except Exception as e:
         raise USvisaException(e, sys) from e
 
-def load_numpy_arrray_data(file_path: str) -> np.array:
+def load_numpy_array_data(file_path: str) -> np.array:
     """
     load numpy array from file
     file_path: str location of file to load

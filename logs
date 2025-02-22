@@ -668,3 +668,7 @@
 [ 2025-02-22 23:17:49,554 ] pymongo.topology - DEBUG - {"topologyId": {"$oid": "67ba0d5c03d931c26a936ebb"}, "serverHost": "cluster0-shard-00-01.1bwkp.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 4547.00000000048, "failure": "\"_OperationCancelled('operation cancelled')\"", "message": "Server heartbeat failed"}
 [ 2025-02-22 23:17:49,557 ] pymongo.topology - DEBUG - {"topologyId": {"$oid": "67ba0d5c03d931c26a936ebb"}, "serverHost": "cluster0-shard-00-00.1bwkp.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 4547.00000000048, "failure": "\"_OperationCancelled('operation cancelled')\"", "message": "Server heartbeat failed"}
 [ 2025-02-22 23:17:49,557 ] pymongo.topology - DEBUG - {"topologyId": {"$oid": "67ba0d5c03d931c26a936ebb"}, "serverHost": "cluster0-shard-00-02.1bwkp.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 4547.00000000048, "failure": "\"_OperationCancelled('operation cancelled')\"", "message": "Server heartbeat failed"}
+[ 2025-02-23 00:20:11,886 ] root - INFO - Entered the start_data_ingestion method of TrainPipeline class
+[ 2025-02-23 00:20:11,888 ] root - INFO - Getting the data fron mongodb
+[ 2025-02-23 00:20:11,888 ] root - INFO - Entered initiate_data_ingestion method of Data_Ingestion class
+[ 2025-02-23 00:20:11,888 ] root - INFO - Exporting data from mongodb
