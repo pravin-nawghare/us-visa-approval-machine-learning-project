@@ -21,7 +21,7 @@ class DataTransformationArtifact:
 @dataclass
 class ClassificationMetricArtifact:
     f1_score: float
-    precision: float
+    precision_score: float
     recall_score: float
 
 

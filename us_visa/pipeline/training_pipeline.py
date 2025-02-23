@@ -77,7 +77,7 @@ class TrainPipeline:
         This method of TrainPipeline class is responsible for starting model training
         """
         try:
-            model_trainer = ModelTrainer(data_transformation_artifact=DataTransformationArtifact,
+            model_trainer = ModelTrainer(data_transformation_artifact=data_transformation_artifact,
                                         model_trainer_config=self.model_trainer_config)
             model_trainer_artifact = model_trainer.initiate_model_trainer()
             return model_trainer_artifact

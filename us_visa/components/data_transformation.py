@@ -13,7 +13,7 @@ from us_visa.entity.config_entity import DataTransformationConfig
 from us_visa.entity.artifact_entity import DataTransformationArtifact, DataIngestionArtifact, DataValidationArtifact
 from us_visa.exception import USvisaException
 from us_visa.logger import logging
-from us_visa.utils.main_utils import save_object, save_numpy_array_data, read_yaml_file, write_yaml_file, drop_columns
+from us_visa.utils.main_utils import save_object, save_numpy_array_data, read_yaml_file, drop_columns
 from us_visa.entity.estimator import TargetValueMapping
 
 class DataTransformation:
@@ -133,6 +133,7 @@ class DataTransformation:
                 logging.info("Added company_age column to the Test dataset")
 
                 input_feature_test_df = drop_columns(df=input_feature_test_df, cols = drop_cols)
+
                 logging.info("drop the columns in drop_cols of Test dataset")
 
                 target_feature_test_df = target_feature_test_df.replace(
@@ -152,6 +153,7 @@ class DataTransformation:
                 )
 
                 input_feature_test_arr = preprocessor.transform(input_feature_test_df)
+                
                 logging.info("Used the preprocessor object to transform the test features")
 
                 logging.info("Applying SMOTEENN on Training dataset")
