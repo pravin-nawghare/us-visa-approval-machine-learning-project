@@ -25,8 +25,7 @@ AWS_ACCESS_KEY_ID_ENV_KEY = "AWS_ACCESS_KEY_ID"
 AWS_SECRET_ACCESS_KEY_ENV_KEY = "AWS_SECRET_ACCESS_KEY"
 REGION_NAME = "ap-northeast-2"
 
-# aws access key id - AKIAWQUOZIMSDUP7E4MQ
-# aws secret access key - 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
+
 
 """
 Data Ingestion related constant start with DATA_INGESTION VAR NAME
