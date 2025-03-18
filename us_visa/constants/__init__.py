@@ -21,6 +21,13 @@ CURRENT_YEAR = date.today().year
 PREPROCESSING_OBJECT_FILE_NAME = "preprocessing.pkl"
 SCHEMA_FILE_PATH = os.path.join("config", "schema.yaml")
 
+AWS_ACCESS_KEY_ID_ENV_KEY = "AWS_ACCESS_KEY_ID"
+AWS_SECRET_ACCESS_KEY_ENV_KEY = "AWS_SECRET_ACCESS_KEY"
+REGION_NAME = "ap-northeast-2"
+
+# aws access key id - AKIAWQUOZIMSDUP7E4MQ
+# aws secret access key - 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
+
 """
 Data Ingestion related constant start with DATA_INGESTION VAR NAME
 """
@@ -52,3 +59,10 @@ MODEL_TRAINER_TRAINED_MODEL_DIR: str = "trained_model"
 MODEL_TRAINER_TRAINED_MODEL_NAME: str = "model.pkl"
 MODEL_TRAINER_EXPECTED_SCORE: float = 0.6
 MODEL_TRAINER_MODEL_CONFIG_FILE_PATH: str = os.path.join("config", "model.yaml")
+
+"""
+MODEL EVALUATION related constant 
+"""
+MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE: float = 0.02 # 0.07 when actual implementation
+MODEL_BUCKET_NAME = "usvisamodelfirst2025"
+MODEL_PUSHER_S3_KEY = "s3 key"
